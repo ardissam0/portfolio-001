@@ -1,7 +1,4 @@
-body {
-    align-items: center;
-    text-align: center;
-}
+/* Header/Nav styles */
 .header-navigation {
     background-color: darkslategray;
     color: white;
@@ -10,15 +7,105 @@ body {
     justify-content: space-between;
     font-family: cursive;
 }
+nav {
+    margin-top: 40px;
+}
 nav a {
     font-size: 1.5em;
     margin-right: 20px;
     color: white;
+}
+nav a:link {
+    color: white;
+}
+nav a:visited {
+    color: lightgrey;
+}
+nav a:hover {
+    color: dodgerblue;
+}
+nav a:active{
+    color: firebrick;
+}
+
+/* Main content styles*/
+body {
+    align-items: center;
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+section header {
+    display: flex;
+    flex-direction: column;
+}
+section header .intro-text {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+section header .about-me-text {
+    display: block;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+section header .contact-me-list{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 10%;
+}
+a {
     text-decoration: none;
+    color: black;
 }
-nav {
-    margin-top: 40px;
-}
-img{
+img {
     height: 250px;
+}
+ul li {
+    margin-top: 5%;
+    font-weight: bold;
+}
+ul li a:hover {
+    color: dodgerblue;
+}
+hr{
+    width: 50%;
+}
+
+/* Theo's image */
+.theo-image img {
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.theo-image p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+}
+footer div {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+footer nav {
+    margin-bottom: 40px;
 }
