@@ -14,6 +14,7 @@ nav a {
     font-size: 1.5em;
     margin-right: 20px;
     color: white;
+    text-decoration: none;
 }
 nav a:link {
     color: white;
@@ -22,14 +23,15 @@ nav a:visited {
     color: lightgrey;
 }
 nav a:hover {
-    color: dodgerblue;
+    color: #9C9054;
 }
 nav a:active{
-    color: firebrick;
+    color: #4F3749;
 }
 
 /* Main content styles*/
 body {
+    margin: 0 0 150px;
     align-items: center;
     text-align: center;
 }
@@ -50,7 +52,7 @@ section header .intro-text {
 }
 section header .about-me-text {
     display: block;
-    width: 45%;
+    width: 35%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -63,8 +65,11 @@ section header .contact-me-list{
     text-align: left;
     margin-top: 10%;
 }
+section header .contact-me-list li{
+    list-style-type: none;
+    margin-top: 10%;
+}
 a {
-    text-decoration: none;
     color: black;
 }
 img {
@@ -75,10 +80,10 @@ ul li {
     font-weight: bold;
 }
 ul li a:hover {
-    color: dodgerblue;
+    color: #9C9054;
 }
 hr{
-    width: 50%;
+    width: 40%;
 }
 
 /* Theo's image */
@@ -96,6 +101,7 @@ footer {
     background-color: black;
     position: fixed;
     width: 100%;
+    height: 150px;
     bottom: 0;
     color: white;
     display: flex;
@@ -108,4 +114,30 @@ footer div {
 }
 footer nav {
     margin-bottom: 40px;
+}
+
+/* @media mobile-friendly styling */
+@media (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .header-navigation, nav, footer {
+        flex-direction: column;
+    }
+    section header .intro-text, .about-me-text, .contact-me-list {
+        width: 90%;
+        margin: 0 auto;
+    } 
+    section header .about-me-text {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+    footer div, nav {
+        margin-top: 0;
+    }
+    hr {
+        width: 90%;
+    }
 }
